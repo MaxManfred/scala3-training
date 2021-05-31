@@ -1,4 +1,6 @@
-package org.me.scala3
+package org.me.scala3.controlstructures
+
+import org.me.scala3.controlstructures.Person
 
 import java.io.IOException
 

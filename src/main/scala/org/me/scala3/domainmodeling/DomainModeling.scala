@@ -1,6 +1,4 @@
-package org.me.scala3
-
-import CrustSize.*
+package org.me.scala3.domainmodeling
 
 object DomainModeling {
 
@@ -21,16 +19,16 @@ object DomainModeling {
   }
 
   def fpModeling1(): Unit = {
-    val currentCrustSize = Small
+    val currentCrustSize = CrustSize.Small
 
 //    enums in a match expression
     currentCrustSize match
-      case Small => println("Small crust size")
-      case Medium => println("Medium crust size")
-      case Large => println("Large crust size")
+      case CrustSize.Small => println("Small crust size")
+      case CrustSize.Medium => println("Medium crust size")
+      case CrustSize.Large => println("Large crust size")
 
 //    enums in an if statement
-    if currentCrustSize == Small then println("Small crust size")
+    if currentCrustSize == CrustSize.Small then println("Small crust size")
   }
 
   def fpModeling2(): Unit = {
@@ -41,7 +39,7 @@ object DomainModeling {
     val p = Person("Reginald Kenneth Dwight", "Singer")
 
 //    a good default toString method
-    println(p)                // org.me.scala3.Person = org.me.scala3.Person(Reginald Kenneth Dwight,Singer)
+    println(p)                // org.me.scala3.controlstructures.Person = org.me.scala3.controlstructures.Person(Reginald Kenneth Dwight,Singer)
 
 //    can access its fields, which are immutable
     println(p.name)           // "Reginald Kenneth Dwight"
@@ -49,7 +47,7 @@ object DomainModeling {
 
     // when you need to make a change, use the copy method to “update as you copy”
     val p2 = p.copy(name = "Elton John")
-    println(p2)               // org.me.scala3.Person = org.me.scala3.Person(Elton John,Singer)
+    println(p2)               // org.me.scala3.controlstructures.Person = org.me.scala3.controlstructures.Person(Elton John,Singer)
   }
 }
 
