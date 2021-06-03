@@ -78,8 +78,6 @@ class Socket(val timeout: Int = 5_000, val linger: Int = 5_000):
   override def toString =
     s"timeout: $timeout, linger: $linger"
 
-
-
 // [1] the primary constructor
 class Student(var name: String, var govtId: String):
 
