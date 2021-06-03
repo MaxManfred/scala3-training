@@ -1,6 +1,6 @@
 package org.me.scala3.domainmodeling
 
-object DomainModeling {
+object DomainModeling1 {
 
   def main(args: Array[String]): Unit = {
     oopModeling()
